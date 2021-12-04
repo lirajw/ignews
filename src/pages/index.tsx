@@ -61,7 +61,7 @@ export const getServerSideProps: GetServerSideProps = async () => {
 }
 */
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getStaticProps: GetStaticProps = async () => {  
 
   const price = await stripe.prices.retrieve('price_1JyQMLCupjTk6gFqWmBqCVeM', {
     expand: ['product']
